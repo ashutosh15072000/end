@@ -1,11 +1,10 @@
-pymongo
-pymongo[srv]
-dnspython
 pandas
 numpy
-ensure
-wheel
-
+scikit-learn
+seaborn 
+flask
+mlflow==2.2.2
+dvc
 # dev requirements -
 
 pytest==7.1.3
