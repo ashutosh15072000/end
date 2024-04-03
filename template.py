@@ -14,6 +14,7 @@ list_of_files=[
     "src/pipepline/__init__.py",
     "src/pipeline/training_pipeline.py",
     "src/pipeline/prediction_pipeline.py",
+    "src/pipeline/__init__.py",
     "src/utils/utils.py",
     "tests/unit/__init__.py",
     "tests/integration/__init__.py",
@@ -26,7 +27,7 @@ list_of_files=[
     "tox.ini",
     "Experiment/experiments.ipynb",
     "src/logger/logging.py",
-    "src/logger/__init__.py"
+    "src/logger/__init__.py",
     "src/exception/exception.py"
 ]
 
