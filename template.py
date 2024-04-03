@@ -6,6 +6,7 @@ import logging
 list_of_files=[
     ".github/workflows/.gitkeep",
     "src/__init__.py",
+    "src/components/__init__.py",
     "src/components/data_ingestion.py",
     "src/components/data_transformation.py",
     "src/components/model_trainer.py",
@@ -25,6 +26,7 @@ list_of_files=[
     "tox.ini",
     "Experiment/experiments.ipynb",
     "src/logger/logging.py",
+    "src/logger/__init__.py"
     "src/exception/exception.py"
 ]
 
