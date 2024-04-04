@@ -8,6 +8,8 @@ dvc
 ipykernel
 xgboost
 logger
+pathlib
+dataclasses
 # dev requirements -
 
 pytest==7.1.3

@@ -1,0 +1,25 @@
+[2024-04-04 11:20:39,993] 22 root - INFO - Data ingestion start 
+[2024-04-04 11:20:43,224] 27 root - INFO - Reading a DataFrame
+[2024-04-04 11:20:44,281] 36 root - INFO - I have saved the raw dataset in artifact folder
+[2024-04-04 11:20:44,281] 38 root - INFO - Here I have performed train test split
+[2024-04-04 11:20:44,307] 42 root - INFO - train test split completed
+[2024-04-04 11:20:45,282] 49 root - INFO - Data Ingestion Part Completed
+[2024-04-04 11:20:45,419] 81 root - INFO - Read Train and Test Data Complete
+[2024-04-04 11:20:45,423] 82 root - INFO - Train Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   87212   0.90  Very Good     F     SI1   62.9   62.0  6.10  6.07  3.83   3950
+1   49769   0.85    Premium     H     VS2   62.4   58.0  6.07  6.04  3.77   3250
+2   19272   0.39    Premium     G    VVS1   59.9   61.0  4.74  4.78  2.86    988
+3  158810   1.20    Premium     G     VS2   61.2   58.0  6.86  6.81  4.19   7338
+4  122729   1.50      Ideal     G     SI1   61.3   56.0  7.37  7.32  4.49  10150
+[2024-04-04 11:20:45,427] 83 root - INFO - Test Dataframe Head : 
+       id  carat    cut color clarity  depth  table     x     y     z  price
+0  109093   1.54  Ideal     H    VVS2   62.4   56.0  7.47  7.30  4.60  13034
+1   99626   0.30  Ideal     H    VVS1   61.8   56.0  4.31  4.32  2.67    639
+2  144372   0.42  Ideal     E    VVS2   61.8   56.0  4.84  4.81  2.98   1243
+3  128549   1.15  Ideal     H     SI1   62.0   57.0  6.70  6.66  4.15   5156
+4    5030   0.72  Ideal     D     SI2   61.2   58.0  5.79  5.83  3.56   2671
+[2024-04-04 11:20:45,427] 29 root - INFO - Data Transformation initiated
+[2024-04-04 11:20:45,427] 40 root - INFO - Pipeline Initiated
+[2024-04-04 11:20:45,427] 72 root - INFO - Exception occured in the initiate_datatransformation
+[2024-04-04 11:20:45,432] 128 root - INFO - Error occured during Data Preprocessing

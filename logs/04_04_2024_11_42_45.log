@@ -1,0 +1,27 @@
+[2024-04-04 11:42:46,599] 22 root - INFO - Data ingestion start 
+[2024-04-04 11:42:49,666] 27 root - INFO - Reading a DataFrame
+[2024-04-04 11:42:50,636] 36 root - INFO - I have saved the raw dataset in artifact folder
+[2024-04-04 11:42:50,636] 38 root - INFO - Here I have performed train test split
+[2024-04-04 11:42:50,662] 42 root - INFO - train test split completed
+[2024-04-04 11:42:51,634] 49 root - INFO - Data Ingestion Part Completed
+[2024-04-04 11:42:51,772] 87 root - INFO - read train and test data complete
+[2024-04-04 11:42:51,777] 88 root - INFO - Train Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   23394   2.02  Very Good     H     SI2   63.6   59.0  7.88  7.99  5.04  17063
+1   92589   0.54      Ideal     D     VS2   61.1   57.0  5.25  5.28  3.22   2319
+2  149540   1.20    Premium     G      IF   59.4   58.0  6.92  6.89  4.15  10079
+3   96583   1.01      Ideal     H     SI1   62.3   57.0  6.43  6.36  3.99   4619
+4   93792   1.01  Very Good     G     VS2   61.0   56.0  6.48  6.54  3.98   6352
+[2024-04-04 11:42:51,780] 89 root - INFO - Test Dataframe Head : 
+       id  carat      cut color clarity  depth  table     x     y     z  price
+0   86117   1.23  Premium     F     VS2   61.6   59.0  6.88  6.84  4.23   8662
+1  148146   0.52    Ideal     H      IF   60.7   58.0  5.17  5.20  3.15   1844
+2  154660   0.41  Premium     E     SI1   61.8   58.0  4.79  4.75  2.95    901
+3  130574   0.51    Ideal     G      IF   61.9   54.0  5.15  5.18  3.20   2093
+4  107042   1.01  Premium     I     VS1   62.2   58.0  6.41  6.46  4.00   5279
+[2024-04-04 11:42:51,781] 32 root - INFO - Data Transformation initiated
+[2024-04-04 11:42:51,781] 43 root - INFO - Pipeline Initiated
+[2024-04-04 11:42:52,075] 107 root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-04-04 11:42:52,084] 117 root - INFO - preprocessing pickle file saved
+[2024-04-04 11:42:52,087] 21 root - INFO - Splitting Dependt and Independent Variable
+[2024-04-04 11:42:52,087] 62 root - INFO - Error Occured During Training
