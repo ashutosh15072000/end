@@ -25,7 +25,7 @@ class ModelEvaluation:
         try:
              X_test,y_test=(test_array[:,:-1], test_array[:,-1])
 
-             model_path=os.path.join("artifacts","model.pkl")
+             model_path=os.path.join("artifact","model.pkl")
              model=load_object(model_path)
 
              #mlflow.set_registry_uri("")

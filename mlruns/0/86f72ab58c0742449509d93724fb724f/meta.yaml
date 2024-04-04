@@ -1,0 +1,15 @@
+artifact_uri: file:///A:/Docker/end/end/mlruns/0/86f72ab58c0742449509d93724fb724f/artifacts
+end_time: 1712232474908
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 86f72ab58c0742449509d93724fb724f
+run_name: industrious-cub-478
+run_uuid: 86f72ab58c0742449509d93724fb724f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712232471943
+status: 3
+tags: []
+user_id: ayush
