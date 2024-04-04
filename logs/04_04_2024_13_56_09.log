@@ -1,0 +1,40 @@
+[2024-04-04 13:56:11,061] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.29.167:8000
+[2024-04-04 13:56:11,061] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-04-04 13:56:14,053] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 13:56:14] "GET /predict HTTP/1.1" 200 -
+[2024-04-04 14:00:49,302] 74 root - INFO - DataFrame Gathered
+[2024-04-04 14:00:49,303] 57 root - INFO - Exception Occured in load_object function utils
+[2024-04-04 14:00:49,303] 1414 app - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "A:\Docker\end\end\src\utils\utils.py", line 51, in load_object
+    with open(file_path,'rb') as file_obj:
+FileNotFoundError: [Errno 2] No such file or directory: 'arifact\\preprocessor.pkl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "A:\Docker\end\end\src\pipeline\prediction_pipeline.py", line 20, in predict
+    preprocessor=load_object(preprocessor_path)
+  File "A:\Docker\end\end\src\utils\utils.py", line 58, in load_object
+    raise customexception(e,sys)
+src.exception.exception.customexception: Error occured in python script name [A:\Docker\end\end\src\utils\utils.py] line number [51] error message [[Errno 2] No such file or directory: 'arifact\\preprocessor.pkl']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ayush\anaconda3\envs\streanlit\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ayush\anaconda3\envs\streanlit\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ayush\anaconda3\envs\streanlit\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ayush\anaconda3\envs\streanlit\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 32, in predict_datapoint
+    pred=predict_pipeline.predict(final_data)
+  File "A:\Docker\end\end\src\pipeline\prediction_pipeline.py", line 31, in predict
+    raise customexception (e,sys)
+src.exception.exception.customexception: Error occured in python script name [A:\Docker\end\end\src\pipeline\prediction_pipeline.py] line number [20] error message [Error occured in python script name [A:\Docker\end\end\src\utils\utils.py] line number [51] error message [[Errno 2] No such file or directory: 'arifact\\preprocessor.pkl']]
+[2024-04-04 14:00:49,305] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:00:49] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
