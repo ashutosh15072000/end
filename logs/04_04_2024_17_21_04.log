@@ -1,0 +1,32 @@
+[2024-04-04 17:21:06,009] 22 root - INFO - Data ingestion start 
+[2024-04-04 17:21:09,069] 27 root - INFO - Reading a DataFrame
+[2024-04-04 17:21:10,052] 36 root - INFO - I have saved the raw dataset in artifact folder
+[2024-04-04 17:21:10,053] 38 root - INFO - Here I have performed train test split
+[2024-04-04 17:21:10,079] 42 root - INFO - train test split completed
+[2024-04-04 17:21:12,413] 49 root - INFO - Data Ingestion Part Completed
+[2024-04-04 17:21:12,557] 91 root - INFO - read train and test data complete
+[2024-04-04 17:21:12,562] 92 root - INFO - Train Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   15095   0.90      Ideal     F     SI1   62.0   56.0  6.13  6.19  3.82   4284
+1   94936   1.01  Very Good     H     SI1   62.5   58.0  6.36  6.39  3.98   4466
+2   25839   0.32      Ideal     G     SI1   62.0   56.0  4.38  4.39  2.72    612
+3   24893   0.33    Premium     E     VS1   61.3   59.0  4.41  4.44  2.71    781
+4  110372   0.51    Premium     H     SI1   61.8   60.0  5.11  5.14  3.17   1138
+[2024-04-04 17:21:12,612] 93 root - INFO - Test Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   49233   0.70       Good     F     SI1   64.3   59.0  5.60  5.55  3.59   2312
+1   16488   0.30  Very Good     J     VS1   62.3   59.0  4.26  4.29  2.66    394
+2  183438   1.50    Premium     H     SI2   59.6   58.0  7.41  7.32  4.38   7392
+3   16023   0.71    Premium     E     SI1   60.0   60.0  5.75  5.79  3.46   2701
+4  151463   1.04    Premium     G     SI1   62.9   58.0  6.47  6.42  4.05   5152
+[2024-04-04 17:21:12,616] 36 root - INFO - Data Transformation initiated
+[2024-04-04 17:21:12,616] 47 root - INFO - Pipeline Initiated
+[2024-04-04 17:21:12,947] 113 root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-04-04 17:21:12,954] 127 root - INFO - preprocessing pickle file saved
+[2024-04-04 17:21:12,958] 21 root - INFO - Splitting Dependt and Independent Variable
+[2024-04-04 17:21:13,860] 42 root - INFO - Model Report :{'LinearRegression': 0.9372823330425503, 'Lasso': 0.9372670694569571, 'Ridge': 0.9372823611951125, 'Elasticnet': 0.8545866865036914}
+[2024-04-04 17:21:13,861] 55 root - INFO - Best Model Found , Model Name : Ridge , R2 Score : 0.9372823611951125
+[2024-04-04 17:21:13,862] 15 root - INFO - Evaluation start
+[2024-04-04 17:21:13,862] 21 root - INFO - Splitting Dependt and Independent Variable
+[2024-04-04 17:21:14,734] 42 root - INFO - Model Report :{'LinearRegression': 0.9372823330425503, 'Lasso': 0.9372670694569571, 'Ridge': 0.9372823611951125, 'Elasticnet': 0.8545866865036914}
+[2024-04-04 17:21:14,734] 55 root - INFO - Best Model Found , Model Name : Ridge , R2 Score : 0.9372823611951125

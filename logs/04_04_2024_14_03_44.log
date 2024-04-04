@@ -1,0 +1,18 @@
+[2024-04-04 14:03:45,573] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.29.167:8000
+[2024-04-04 14:03:45,573] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-04-04 14:03:49,877] 74 root - INFO - DataFrame Gathered
+[2024-04-04 14:03:50,003] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:03:50] "POST /predict HTTP/1.1" 200 -
+[2024-04-04 14:04:26,653] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:04:26] "GET /predict HTTP/1.1" 200 -
+[2024-04-04 14:04:27,717] 74 root - INFO - DataFrame Gathered
+[2024-04-04 14:04:27,723] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:04:27] "POST /predict HTTP/1.1" 200 -
+[2024-04-04 14:04:30,549] 74 root - INFO - DataFrame Gathered
+[2024-04-04 14:04:30,554] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:04:30] "POST /predict HTTP/1.1" 200 -
+[2024-04-04 14:05:16,642] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:05:16] "GET /predict HTTP/1.1" 200 -
+[2024-04-04 14:07:30,878] 74 root - INFO - DataFrame Gathered
+[2024-04-04 14:07:30,882] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:07:30] "POST /predict HTTP/1.1" 200 -
+[2024-04-04 14:09:33,142] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:09:33] "GET /predict HTTP/1.1" 200 -
+[2024-04-04 14:10:22,755] 74 root - INFO - DataFrame Gathered
+[2024-04-04 14:10:22,760] 96 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2024 14:10:22] "POST /predict HTTP/1.1" 200 -

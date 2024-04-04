@@ -6,7 +6,7 @@ import pandas as pd
 from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
 from src.components.model_trainer import ModelTrainer
-
+from src.components.model_evaluation import ModelEvaluation
 ## CREATION OF COMPONENTS OBJ
 obj=DataIngestion()
 
@@ -17,4 +17,8 @@ data_transformation=DataTransformation()
 train_arr,test_arr=data_transformation.initialize_data_transformation(train_data_path,test_data_path)
 
 model_trainer_obj=ModelTrainer()
+model_trainer_obj.initiate_model_training(train_arr,test_arr)
+
+
+model_eval_obj=ModelEvaluation()
 model_trainer_obj.initiate_model_training(train_arr,test_arr)

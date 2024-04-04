@@ -28,7 +28,7 @@ class DataIngestion:
             
             ## MAKING THE ARTIFACT FOLDER WHERE WE SAVE OUR DATA
 
-            os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)))
+            os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
             
             ## SAVING THE DATA INTO ARTIFACT FOLDER
 
