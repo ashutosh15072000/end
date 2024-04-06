@@ -19,7 +19,7 @@ class PredictPipeline:
 
             preprocessor=load_object(preprocessor_path)
             model=load_object(model_path)
-
+            ## SCALING
             scaled_feature=preprocessor.transform(features)
 
             pred=model.predict(scaled_feature)
